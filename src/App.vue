@@ -1,11 +1,13 @@
 <script setup>
-let a = 10;
+import Button from "./components/Button.vue";
+const icon = 'blue';
 </script>
 
 <template>
-    <div :id class="red">
-        {{ a }}
-    </div>
+    <Button>
+        <template #[icon]>+</template>
+        Сохранить
+    </Button>
 </template>
 
 <style scoped></style>
